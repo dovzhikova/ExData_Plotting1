@@ -22,7 +22,7 @@ data_filtered$DateTime <- strptime(paste(data_filtered$Date, data_filtered$Time)
 
 # make a plot and save it into PNG file
 
-png("plot4.png", width=450, height=450)
+png("plot4.png", width=480, height=480)
 par(mfrow=c(2,2))
 plot(data_filtered$DateTime, data_filtered$Global_active_power, type="l", xlab="", ylab="Global Active Power")
 plot(data_filtered$DateTime, data_filtered$Voltage, xlab="datetime", ylab="Voltage", type="l")  
